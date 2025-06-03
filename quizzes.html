@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzes | Git & GitHub Classroom Companion</title>
+  <meta name="description" content="Test your knowledge of Git and GitHub concepts with interactive quizzes designed for CS teachers.">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Quizzes | Git & GitHub Classroom Companion">
+  <meta property="og:description" content="Test your knowledge of Git and GitHub concepts with interactive quizzes designed for CS teachers.">
+  <meta property="og:type" content="website">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages/quizzes.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="light-mode">
+  <div class="layout-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="ri-github-fill"></i>
+          <span>Git Classroom</span>
+        </div>
+        <button class="close-menu" id="close-menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      
+      <div class="user-profile">
+        <div class="avatar">
+          <span>T</span>
+        </div>
+        <div class="user-info">
+          <span class="user-name">CS Teacher</span>
+          <span class="user-role">Workshop Participant</span>
+        </div>
+      </div>
+      
+      <div class="progress-section">
+        <div class="progress-header">
+          <span>Your Progress</span>
+          <span class="progress-percentage">50%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 50%"></div>
+        </div>
+        <div class="progress-stats">
+          <div class="stat">
+            <span class="stat-value">2/4</span>
+            <span class="stat-label">Modules</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2/5</span>
+            <span class="stat-label">Badges</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">75%</span>
+            <span class="stat-label">Quiz Score</span>
+          </div>
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="ri-home-line"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="git-basics.html">
+              <i class="ri-git-repository-line"></i>
+              <span>Git Basics</span>
+            </a>
+          </li>
+          <li>
+            <a href="branching.html">
+              <i class="ri-git-branch-line"></i>
+              <span>Branching</span>
+            </a>
+          </li>
+          <li>
+            <a href="merge-conflicts.html">
+              <i class="ri-error-warning-line"></i>
+              <span>Merge Conflicts</span>
+            </a>
+          </li>
+          <li>
+            <a href="collaboration.html">
+              <i class="ri-team-line"></i>
+              <span>Collaboration</span>
+            </a>
+          </li>
+          <li>
+            <a href="vscode.html">
+              <i class="ri-terminal-line"></i>
+              <span>VS Code</span>
+            </a>
+          </li>
+          <li class="nav-divider"></li>
+          <li>
+            <a href="templates.html">
+              <i class="ri-file-copy-line"></i>
+              <span>Templates</span>
+            </a>
+          </li>
+          <li>
+            <a href="student-guides.html">
+              <i class="ri-book-open-line"></i>
+              <span>Student Guides</span>
+            </a>
+          </li>
+          <li>
+            <a href="quizzes.html" class="active">
+              <i class="ri-question-line"></i>
+              <span>Quizzes</span>
+            </a>
+          </li>
+          <li class="nav-divider"></li>
+          <li>
+            <a href="feedback.html">
+              <i class="ri-chat-1-line"></i>
+              <span>Feedback</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="theme-toggle">
+        <span>Theme</span>
+        <div class="toggle-switch">
+          <input type="checkbox" id="theme-toggle-checkbox">
+          <label for="theme-toggle-checkbox" class="toggle-label">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+            <span class="toggle-ball"></span>
+          </label>
+        </div>
+      </div>
+    </aside>
+    
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Navigation Bar -->
+      <nav class="top-nav">
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div class="page-title">
+          <h1>Quizzes</h1>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-btn" id="mobile-theme-toggle">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+          </button>
+          <a href="https://github.com/topics/github-classroom" target="_blank" class="github-link">
+            <i class="ri-github-fill"></i>
+          </a>
+        </div>
+      </nav>
+      
+      <!-- Quizzes Content -->
+      <div class="content-container">
+        <section id="quizzes">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+            <h2 class="section-title">
+              <i class="ri-question-line" style="color: #6f42c1; margin-right: 0.5rem;"></i>
+              Git & GitHub Quizzes
+            </h2>
+          </div>
+          
+          <div class="quiz-container">
+            <div class="quiz-list">
+              <div class="quiz-list-header">
+                <h3>Available Quizzes</h3>
+              </div>
+              
+              <div class="quiz-items">
+                <div class="quiz-item active" data-id="git-basics">
+                  <h4>Git Basics Quiz</h4>
+                  <p>Test your understanding of fundamental Git operations and concepts.</p>
+                  <div class="meta">
+                    <span>10 questions</span>
+                    <span>• Module: Git Basics</span>
+                  </div>
+                </div>
+                
+                <div class="quiz-item" data-id="branching">
+                  <h4>Branching & Merging Quiz</h4>
+                  <p>Challenge your knowledge of Git branches, merging strategies, and workflows.</p>
+                  <div class="meta">
+                    <span>8 questions</span>
+                    <span>• Module: Branching</span>
+                  </div>
+                </div>
+                
+                <div class="quiz-item" data-id="conflicts">
+                  <h4>Merge Conflicts Quiz</h4>
+                  <p>Test your ability to identify and resolve Git merge conflicts effectively.</p>
+                  <div class="meta">
+                    <span>6 questions</span>
+                    <span>• Module: Merge Conflicts</span>
+                  </div>
+                </div>
+                
+                <div class="quiz-item" data-id="collaboration">
+                  <h4>GitHub Collaboration Quiz</h4>
+                  <p>Evaluate your understanding of pull requests, issues, and collaboration workflows.</p>
+                  <div class="meta">
+                    <span>12 questions</span>
+                    <span>• Module: Collaboration</span>
+                  </div>
+                </div>
+                
+                <div class="quiz-item" data-id="classroom">
+                  <h4>GitHub Classroom Quiz</h4>
+                  <p>Test your knowledge of GitHub Classroom features and teaching strategies.</p>
+                  <div class="meta">
+                    <span>10 questions</span>
+                    <span>• Module: Classroom</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="quiz-benefits">
+                <h4>Why Take Quizzes?</h4>
+                <ul>
+                  <li>Reinforce your understanding of Git concepts</li>
+                  <li>Identify areas for further study</li>
+                  <li>Prepare for teaching Git to your students</li>
+                  <li>Earn badges for your workshop profile</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="quiz-content">
+              <div class="question-container">
+                <!-- Quiz content will be rendered here by js/quiz.js -->
+              </div>
+            </div>
+          </div>  
+        </section>
+      </div>
+      
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="ri-github-fill"></i>
+            <span>Git & GitHub Classroom Companion</span>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="git-basics.html">Modules</a>
+            <a href="templates.html">Resources</a>
+            <a href="feedback.html">Feedback</a>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2025 Git & GitHub Classroom Companion. Created for CS Teachers.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  
+  <!-- JavaScript -->
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/quiz.js"></script>
+</body>
+</html>
